@@ -16,10 +16,12 @@ h1 {
 
 h2 {
   font-size: 4.8rem;
+  font-family: "Candal", sans-serif;
 }
 
 h3 {
   font-size: 3rem;
+  font-family: "Charm", cursive;
 }
 
 h4,
@@ -27,17 +29,19 @@ h5 {
   font-size: 2.8rem;
 }
 
-li {
+li,
+ button{
   font-size: 2rem;
 }
 a {
   color: white;
   text-decoration: none;
 }
+
 /* HEADER */
 .main-head {
-  background: #808080;
-  color: orange;
+  background: #263b46;
+  color: #ff3b00;
 }
 
 nav {
@@ -46,7 +50,7 @@ nav {
   align-items: center;
   width: 90%;
   margin: auto;
-  padding: 2rem;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -59,10 +63,44 @@ nav ul {
 
 #logo {
   flex: 2 1 40rem;
+  font-family: "Dancing Script", cursive;
+  font-family: "Train One", cursive;
 }
 
 /* HERO */
 .hero {
   min-height: 90vh;
   background-color: teal;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 4rem;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: #263b46;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 885px){
+
+  html{
+    font-size: 45%;
+  }
+  nav{
+      text-align: center;
+  }
+  #logo{
+      padding: 2rem;
+  }
 }
